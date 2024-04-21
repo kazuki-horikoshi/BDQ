@@ -1,0 +1,70 @@
+FMIL: module = FMILIB, log level = 4: Loading 'linux64' binary with 'default' platform types
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_start: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = Model, log level = 4: [INFO][FMU status:OK] <JMIRuntime><value name="build_date">"Jan 19 2020"</value> <value name="build_time">"16:45:00"</value></JMIRuntime>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <ModelicaMessage category="warning"><value name="msg">"... loading ""tab1"" from ""/home/ylei/Desktop/Github/action-branching-agents/agents/bdq/modelica/occ.mos""&#10;"</value></ModelicaMessage>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <ModelicaMessage category="warning"><value name="msg">"... loading ""tab1"" from ""/home/ylei/Desktop/Github/action-branching-agents/agents/bdq/modelica/plug.mos""&#10;"</value></ModelicaMessage>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <ModelicaMessage category="warning"><value name="msg">"... loading ""tab1"" from ""/home/ylei/Desktop/Github/action-branching-agents/agents/bdq/modelica/lights.mos""&#10;"</value></ModelicaMessage>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <MinScalingExceeded category="warning">Poor scaling in <value name="block">"9"</value> but will allow it based on structure of block. Consider changes in the model. Partial derivative of <value name="equation" flags="index">28</value> with respect to <value name="Iter">"room1.roo.irRadExc.J[7]"</value> is <value name="dRes_dIter">       -4.9475286911220039E+05</value> (<value name="dRes_dIter_scaled">       -1.1484679922333153E+10</value>).</MinScalingExceeded>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <MinScalingExceeded category="warning">Poor scaling in <value name="block">"9"</value> but will allow it based on structure of block. Consider changes in the model. Partial derivative of <value name="equation" flags="index">29</value> with respect to <value name="Iter">"room1.roo.irRadExc.J[6]"</value> is <value name="dRes_dIter">       -6.2669580873552128E+05</value> (<value name="dRes_dIter_scaled">       -1.1499973490314959E+10</value>).</MinScalingExceeded>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <MinScalingExceeded category="warning">Poor scaling in <value name="block">"9"</value> but will allow it based on structure of block. Consider changes in the model. Partial derivative of <value name="equation" flags="index">30</value> with respect to <value name="Iter">"room1.roo.irRadExc.J[5]"</value> is <value name="dRes_dIter">       -4.9475286911220039E+05</value> (<value name="dRes_dIter_scaled">       -1.1484679922333153E+10</value>).</MinScalingExceeded>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <MinScalingExceeded category="warning">Poor scaling in <value name="block">"9"</value> but will allow it based on structure of block. Consider changes in the model. Partial derivative of <value name="equation" flags="index">31</value> with respect to <value name="Iter">"room1.roo.irRadExc.J[4]"</value> is <value name="dRes_dIter">       -7.3784418342341797E+05</value> (<value name="dRes_dIter_scaled">       -1.1508630130305092E+10</value>).</MinScalingExceeded>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <MinScalingExceeded category="warning">Poor scaling in <value name="block">"9"</value> but will allow it based on structure of block. Consider changes in the model. Partial derivative of <value name="equation" flags="index">32</value> with respect to <value name="Iter">"room1.roo.irRadExc.J[3]"</value> is <value name="dRes_dIter">       -2.1079636075251456E+04</value> (<value name="dRes_dIter_scaled">       -1.0057186548031879E+10</value>).</MinScalingExceeded>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <MinScalingExceeded category="warning">Poor scaling in <value name="block">"9"</value> but will allow it based on structure of block. Consider changes in the model. Partial derivative of <value name="equation" flags="index">33</value> with respect to <value name="Iter">"room1.roo.irRadExc.J[2]"</value> is <value name="dRes_dIter">       -2.1079636075251456E+04</value> (<value name="dRes_dIter_scaled">       -1.0057186548031879E+10</value>).</MinScalingExceeded>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <MinScalingExceeded category="warning">Poor scaling in <value name="block">"9"</value> but will allow it based on structure of block. Consider changes in the model. Partial derivative of <value name="equation" flags="index">34</value> with respect to <value name="Iter">"room1.roo.irRadExc.J[1]"</value> is <value name="dRes_dIter">       -1.9065216242408563E+05</value> (<value name="dRes_dIter_scaled">       -1.1370122546469473E+10</value>).</MinScalingExceeded>
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
+FMIL: module = FMI2XML, log level = 3: fmi2_xml_get_default_experiment_tolerance: returning default value, since no attribute was defined in modelDescription
