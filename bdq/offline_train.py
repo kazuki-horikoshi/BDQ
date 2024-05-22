@@ -9,12 +9,14 @@ sys.path.append(path_agent_parent_dir + '../')
 sys.path.append(os.path.dirname(subfolderName) + path_agent_parent_dir)
 path_logs = path_agent_parent_dir + subfolderName + "/"
 
-#import envs
+import envs
 from pyfmi import load_fmu
 from bdq import deepq
 
+import datetime
+
 # Set environment and number of training episodes
-env_name = 'emulator-v0' ; total_num_episodes = 1095
+env_name = 'emulator-v0' ; total_num_episodes = 500
 
 def main():
     dueling = True # with dueling (best-performing)
@@ -37,6 +39,10 @@ def main():
         method_name = '{}{}{}{}{}'.format('Independent_', duel_str, 'TD-target-{}'.format(target_version), 'TD-errors-aggregation-v{}_'.format(losses_version), 'granularity-{}'.format(num_actions_pad))
     
     time_stamp = time.strftime('%Y-%m-%d_%H-%M-%S') 
+
+    # Set the starting day of the simulation
+    year, month, day = 2018, 1, 1  # or Other specific date
+    startTime = datetime.datetime(year, month, day)
 
     model = deepq.models.mlp_branching(
         #hiddens_common=[512, 256], 

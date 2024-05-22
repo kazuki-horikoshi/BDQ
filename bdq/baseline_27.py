@@ -8,13 +8,13 @@ sys.path.append(path_agent_parent_dir + '../')
 sys.path.append(os.path.dirname('baseline') + path_agent_parent_dir)
 path_logs = path_agent_parent_dir + 'baseline/'
 
-#import envs
+import envs
 from pyfmi import load_fmu
 import pandas as pd
 import numpy as np
 
 # Set environment and number of training episodes
-env_name = 'emulator-v99' ; days = 365
+env_name = 'emulator-v0' ; days = 365
 
 eta=600
 occStatus=[1,1,1,1,1,1,1,1]
@@ -31,7 +31,8 @@ def main():
     start_time = pd.datetime(year = 2020, month = 1, day = 1)
     start_timestep = 365*2*24*3600 # skip 2018 and 2019
 
-    init_obs = env.reset(start_timestep)
+#    init_obs = env.reset(start_timestep)
+    init_obs = env.reset()
 
     cur_time = start_time + pd.Timedelta(seconds = 7*3600)
     observations = [init_obs] # save for record
