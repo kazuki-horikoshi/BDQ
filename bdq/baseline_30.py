@@ -1,4 +1,4 @@
-#For baseline model with emulator0
+#For baseline model with emulator99
 
 import gym
 import time
@@ -17,7 +17,7 @@ import pandas as pd
 import numpy as np
 
 # Set environment and number of training episodes
-env_name = 'emulator-v0'; days = 365
+env_name = 'emulator-v99'; days = 365
 
 eta = 600
 occStatus = [1, 1, 1, 1, 1, 1, 1, 1]
@@ -30,12 +30,10 @@ def main():
     env.eta = eta
     env.occStatus = occStatus
 
-    # modification: set start_timestep as 25200-> to match modelica input
-#    start_timestep = 25200  # This represents 7 hours from the start of the day
-    start_timestep = 0
+    start_time = pd.datetime(year = 2020, month = 1, day = 1)
+    start_timestep = 365*2*24*3600 # skip 2018 and 2019
 
-
-    init_obs = env.reset()
+    init_obs = env.reset(start_timestep)
 
     # calculate the time after 7 hours
     start_time = datetime.datetime(year=2020, month=1, day=1) + datetime.timedelta(seconds=start_timestep)
