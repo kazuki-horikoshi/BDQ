@@ -45,11 +45,21 @@ model_file_name = "Branching_Dueling-reduceLocalMax_TD-target-mean_TD-errors-agg
 
 model_dir = '{}/trained_models/{}'.format(os.path.abspath(path_logs), env_name)
 
+def extract_occ_status_from_filename(filename):
+    """Extracts the occupancy status from the model filename."""
+    start_idx = filename.rfind('[')
+    end_idx = filename.rfind(']')
+    occ_status_str = filename[start_idx+1:end_idx]
+    occ_status = list(map(int, occ_status_str.split(', ')))
+    return occ_status
 
 ################# run the trained RL agent on the emulator for some days ###############
 episodes = 7 # one day is one episodes
 steps = 24*4
 def main():
+    # Extract occ_status from the model file name
+    occ_status = extract_occ_status_from_filename(model_file_name)
+
     env = gym.make(env_name)
     act = deepq.load("{}/{}".format(model_dir, model_file_name))
     
@@ -62,7 +72,7 @@ def main():
     actions_range = np.subtract(high, low) 
 
     #Initialize the environment
-    obs = env.reset()
+    obs = env.reset(occ_status=occ_status)
     start_time = pd.datetime(year = env.year, month = env.month, day = env.day)
     cur_time = start_time + pd.Timedelta(seconds = 7*3600)
     observations = [obs] # save for record
@@ -109,6 +119,7 @@ def main():
     "Occupancy Flag": [0,1]
 '''
 
+'''
 observation_space = spaces.Box(low=np.array([24, 0, 0, 0, 0, 21.5, 0, 0.4, 0, 0]), high=np.array([29, 5, 5, 5, 5, 34.5, 1150, 1, 23, 1]))
 # user input the following 10 observations from BMS, can do it better by automation!
 # use 5-min avg value for the solar radiation 
@@ -122,6 +133,7 @@ HGloHor = 96.4
 RH = 0.717
 Hour = 17
 OccupancyFlag = 1 if (Hour>7 and Hour<18) else 0 # =1 during occupied hours 8am to 6pm
+'''
 
 def _setpoint(action_index):
     # temp action space in C: 26.,26.5,27.,27.5,28.,35.
