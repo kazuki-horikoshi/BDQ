@@ -5,6 +5,8 @@ import os, sys
 import time
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')  # Use the Agg backend for non-GUI environments
 
 path_agent_parent_dir = '../' 
 sys.path.append(path_agent_parent_dir + '../')
@@ -72,7 +74,7 @@ def main():
     actions_range = np.subtract(high, low) 
 
     #Initialize the environment
-    obs = env.reset(occ_status=occ_status)
+    obs = env.reset(occ_status=occ_status,eta=1)
     start_time = pd.datetime(year = env.year, month = env.month, day = env.day)
     cur_time = start_time + pd.Timedelta(seconds = 7*3600)
     observations = [obs] # save for record
@@ -100,8 +102,8 @@ def main():
     plt.plot(episode_rewards)
     plt.xlabel('episodes')
     plt.ylabel('daily rewards')
-    plt.show()
-
+    plt.savefig('episode_rewards.png')  # Save the plot to a file
+    print("Plot saved as episode_rewards.png")
 
 
 ################# run the trained RL agent for single step contral based on BMS data ###############
